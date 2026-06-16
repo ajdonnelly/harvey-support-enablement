@@ -1,16 +1,16 @@
 :root {
   color-scheme: light;
   --ink: #1f1d1a;
-  --muted: #6b6259;
-  --line: #e6ded2;
-  --paper: #f8f5f0;
-  --soft: #f0eae0;
+  --muted: #766e65;
+  --line: #efeae2;
+  --paper: #fbfaf7;
+  --soft: #f5f2ec;
   --blue: #8a5a34;
   --green: #5f6b4f;
   --gold: #a36a2e;
   --rust: #9a5638;
   --white: #ffffff;
-  --shadow: 0 24px 70px rgba(31, 29, 26, 0.12);
+  --shadow: 0 16px 44px rgba(31, 29, 26, 0.07);
 }
 
 * {
@@ -43,8 +43,8 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 16px clamp(18px, 4vw, 56px);
-  border-bottom: 1px solid rgba(217, 225, 229, 0.75);
-  background: rgba(251, 252, 250, 0.91);
+  border-bottom: 1px solid var(--line);
+  background: rgba(251, 250, 247, 0.82);
   backdrop-filter: blur(16px);
 }
 
@@ -339,6 +339,7 @@ h1 {
 
 .timeline {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   margin: 0;
   padding: 0;
@@ -349,9 +350,9 @@ h1 {
 .timeline li {
   counter-increment: workflow;
   display: grid;
-  grid-template-columns: 34px 1fr;
+  grid-template-columns: 34px minmax(0, 1fr);
   gap: 10px;
-  align-items: center;
+  align-items: start;
   color: var(--muted);
 }
 
@@ -858,6 +859,33 @@ a.text-button:hover {
 .rubric.formats td:last-child {
   font-weight: 400;
   white-space: normal;
+}
+
+/* Subtle hovers & dividers (restrained, Harvey-style) */
+.project-card,
+.writing-list article,
+.enablement-cards article,
+.blueprint-stage,
+.finding,
+.record,
+.systems-panel {
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.project-card:hover,
+.writing-list article:hover,
+.enablement-cards article:hover,
+.finding:hover {
+  border-color: #e0d8cb;
+  box-shadow: 0 10px 30px rgba(31, 29, 26, 0.05);
+}
+
+.nav a {
+  transition: color 0.18s ease;
+}
+
+.text-button {
+  transition: color 0.18s ease;
 }
 
 /* Two-column meta table (label / value) */
