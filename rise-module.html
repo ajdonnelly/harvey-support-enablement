@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SEJFHV82K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5SEJFHV82K');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive Module: How Harvey Grounds Answers | Alex Donnelly</title>
+    <meta
+      name="description"
+      content="An interactive e-learning module (built in Articulate Rise) on validation and control in Harvey: sources, citations, and data security."
+    >
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .course-intro { padding: clamp(32px, 5vw, 56px) clamp(18px, 6vw, 80px) 8px; }
+      .course-frame-wrap { padding: 16px clamp(18px, 6vw, 80px) clamp(40px, 6vw, 80px); }
+      .course-frame {
+        width: 100%;
+        height: calc(100svh - 120px);
+        min-height: 560px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        background: var(--white);
+      }
+      .course-fallback {
+        display: grid;
+        gap: 8px;
+        padding: 28px;
+        border: 1px dashed var(--line);
+        border-radius: 10px;
+        background: var(--soft);
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="The Human Layer home">
+        <span class="brand-mark" aria-hidden="true">HL</span>
+        <span>
+          <strong>The Human Layer</strong>
+          <small>Alex Donnelly</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#blueprint">Enablement</a>
+        <a href="index.html#samples">Samples</a>
+        <a href="index.html#takeaways">Writing</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="course-intro">
+        <div class="section-heading">
+          <p class="eyebrow">Sample deliverable &middot; Interactive e-learning (Articulate Rise)</p>
+          <h2>How Harvey grounds answers: validation &amp; control</h2>
+          <p>
+            The interactive version of my onboarding module, built in Articulate Rise. It gives staff the
+            talking points behind Harvey&rsquo;s assurance to law firms &mdash; validation and total
+            control, over both the data that goes in and the answers that come back. Independent sample
+            built only from Harvey&rsquo;s public product and security information; not affiliated with or
+            endorsed by Harvey.
+          </p>
+        </div>
+      </section>
+
+      <section class="course-frame-wrap">
+        <iframe
+          class="course-frame"
+          src="rise-module/index.html"
+          title="Interactive module: How Harvey grounds answers"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+        <noscript>
+          <div class="course-fallback">
+            <strong>This module needs JavaScript.</strong>
+            <span>Enable JavaScript, or <a href="rise-module/index.html">open the module in a new tab</a>.</span>
+          </div>
+        </noscript>
+        <p style="margin-top:14px">
+          <a class="text-button" href="rise-module/index.html">Open the module full-screen &rarr;</a>
+          &nbsp;&middot;&nbsp;
+          <a class="text-button" href="onboarding-module.html">Read the written version &rarr;</a>
+        </p>
+      </section>
+
+      <section class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>This is how I&rsquo;d build live enablement</h2>
+          <p>
+            Same content, delivered as a self-paced interactive lesson. Happy to talk through how
+            I&rsquo;d build a full onboarding path like this.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:a.james.donnelly@gmail.com">Start a conversation</a>
+      </section>
+    </main>
+  </body>
+</html>

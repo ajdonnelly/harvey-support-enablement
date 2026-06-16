@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SEJFHV82K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5SEJFHV82K');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Specialist Job Aid: Citation-Accuracy Tickets | Alex Donnelly</title>
+    <meta
+      name="description"
+      content="A sample support-enablement deliverable: a quick-reference job aid for a specialist triaging a citation-accuracy ticket in Harvey Assistant."
+    >
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="The Human Layer home">
+        <span class="brand-mark" aria-hidden="true">HL</span>
+        <span>
+          <strong>The Human Layer</strong>
+          <small>Alex Donnelly</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#blueprint">Enablement</a>
+        <a href="index.html#samples">Samples</a>
+        <a href="index.html#takeaways">Writing</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Sample deliverable &middot; Support job aid</p>
+          <h2>Specialist job aid: triaging a citation-accuracy ticket</h2>
+          <p>
+            A one-page quick-reference for a support specialist who receives a ticket that says, in
+            effect, &ldquo;Harvey&rsquo;s answer cited something that doesn&rsquo;t look right.&rdquo;
+            The goal is a fast, consistent triage path, a clear escalation line, and a calm,
+            accurate message back to the user.
+          </p>
+        </div>
+
+        <div class="project-preview" role="note">
+          <strong>About this sample</strong>
+          <p>
+            This is an independent work sample I built to show how I&rsquo;d approach support enablement
+            content. It is based only on Harvey&rsquo;s public product information and is not affiliated
+            with, authorized by, or endorsed by Harvey. It contains no confidential or internal material;
+            steps, thresholds, and tags are illustrative and would be replaced with real ones on the job.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Orientation</p>
+          <h2>Why this ticket matters</h2>
+          <p>
+            Citations are how Harvey lets a user verify an answer before they rely on it &mdash; the
+            ability to check a claim against its source is core to trust in the product. So a
+            citation that looks wrong isn&rsquo;t a cosmetic bug to the user; it&rsquo;s a question about
+            whether they can trust the tool at all. How a specialist handles it shapes confidence well
+            beyond the single ticket.
+          </p>
+        </div>
+        <div class="project-preview" role="note">
+          <strong>First, classify the report in one read</strong>
+          <p>
+            &ldquo;Citation accuracy&rdquo; usually means one of four things. Naming which one you&rsquo;re
+            looking at decides everything that follows: a <em>wrong link</em> (citation opens the wrong
+            place), a <em>mismatch</em> (the cited source doesn&rsquo;t support the sentence), a
+            <em>missing source</em> (a claim with no citation), or a <em>scope</em> issue (the user
+            expected a source Harvey wasn&rsquo;t given access to).
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Triage</p>
+          <h2>The 5-step path</h2>
+          <p>Work top to bottom. Most tickets resolve by step 3.</p>
+        </div>
+        <ol class="timeline">
+          <li><strong>Reproduce the scope.</strong> Confirm what sources the query actually ran over &mdash;
+          uploads, a Vault, a DMS connection, premium databases, or web. Most &ldquo;wrong&rdquo; citations
+          are really a source-scope mismatch: Harvey can only cite what it was given.</li>
+          <li><strong>Open the citation.</strong> Click through to the cited passage and read it against the
+          sentence it supports. Decide which of the four categories (above) you&rsquo;re in.</li>
+          <li><strong>Check for a known pattern.</strong> Long, multi-source documents and look-alike
+          versions are the usual culprits. Confirm the user is on the current version of the document set
+          and that the source file isn&rsquo;t a near-duplicate.</li>
+          <li><strong>Coach the verification habit.</strong> Show the user how to expand a citation and
+          confirm a claim at the source before relying on it &mdash; the single most valuable habit for
+          trustworthy output. This both resolves the moment and prevents the next ticket.</li>
+          <li><strong>Decide: resolve or escalate.</strong> If it&rsquo;s scope, version, or
+          how-to &mdash; resolve and document. If the source genuinely does not support the claim, it&rsquo;s
+          a substantive accuracy issue &mdash; escalate (criteria below).</li>
+        </ol>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Quick reference</p>
+          <h2>Symptom &rarr; cause &rarr; action</h2>
+        </div>
+        <table class="rubric">
+          <thead>
+            <tr><th>What the user reports</th><th>Most likely cause</th><th>Specialist action</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&ldquo;The citation links to the wrong document.&rdquo;</td>
+              <td>Near-duplicate or superseded version in the source set</td>
+              <td>Confirm active version; have user re-run over the correct file/Vault; document</td>
+            </tr>
+            <tr>
+              <td>&ldquo;The source doesn&rsquo;t actually say this.&rdquo;</td>
+              <td>Substantive mismatch between claim and source</td>
+              <td>Capture the query, the answer, and the cited passage; <strong>escalate</strong></td>
+            </tr>
+            <tr>
+              <td>&ldquo;This claim has no citation.&rdquo;</td>
+              <td>Unsupported assertion; treat as unverified</td>
+              <td>Advise the user not to rely on it; reproduce; escalate if repeatable</td>
+            </tr>
+            <tr>
+              <td>&ldquo;It ignored a document I expected.&rdquo;</td>
+              <td>Source-scope mismatch (file not in scope / not synced)</td>
+              <td>Check source scope &amp; DMS sync; re-run with the source included; resolve</td>
+            </tr>
+            <tr>
+              <td>&ldquo;Citations changed when I re-asked.&rdquo;</td>
+              <td>Prompt phrasing variance over the same sources</td>
+              <td>Share a clearer prompt pattern; point to the prompt library; resolve</td>
+            </tr>
+            <tr>
+              <td>&ldquo;Where does this data go? Do you train on it?&rdquo;</td>
+              <td>A data-security question, not an accuracy issue</td>
+              <td>Give the headline answer (below); route specifics to the security/trust portal</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Decision line</p>
+          <h2>Escalate when&hellip;</h2>
+        </div>
+        <div class="enablement-cards">
+          <article>
+            <span>01</span>
+            <h4>The source truly doesn&rsquo;t support the claim</h4>
+            <p>A reproducible mismatch between an answer and its cited source. Attach query, answer, and the
+            cited passage.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>It repeats across queries</h4>
+            <p>The same error pattern shows up on more than one prompt or user &mdash; a signal, not a
+            one-off.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>It touches data scope or security</h4>
+            <p>Anything suggesting the answer reached, or missed, sources in a way that implicates
+            permissions or confidentiality &mdash; escalate immediately.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h4>The user&rsquo;s trust is shaken</h4>
+            <p>Even if minor, if a key account is rattled, loop in the lead so the relationship is handled,
+            not just the ticket.</p>
+          </article>
+        </div>
+        <div class="project-preview" role="note">
+          <strong>Always log the category</strong>
+          <p>
+            Tag every citation ticket with one of the four categories before you close it. That tag is what
+            turns scattered tickets into a trend the enablement and QA teams can act on &mdash; and it&rsquo;s
+            how a recurring mismatch becomes the next training module instead of a hundred separate
+            conversations.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Adjacent ticket</p>
+          <h2>When it&rsquo;s a data question, not an accuracy one</h2>
+          <p>
+            Citation tickets often shade into &ldquo;&hellip;and wait, where is our data going?&rdquo;
+            That&rsquo;s a different class of question. You don&rsquo;t resolve it with the triage above
+            &mdash; you answer the headline confidently and route the specifics.
+          </p>
+        </div>
+        <div class="enablement-cards">
+          <article>
+            <span>01</span>
+            <h4>Do you train on our data?</h4>
+            <p>No &mdash; Harvey contractually guarantees it doesn&rsquo;t use your inputs, outputs, or
+            uploads to train the underlying models.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>Where is our data stored?</h4>
+            <p>In-region (EU/Switzerland, US, or Australia). Customers control what&rsquo;s uploaded,
+            retention, and deletion.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>Who can see it?</h4>
+            <p>Access controls (SAML SSO, audit logs, IP allow-listing) and in-product permissions govern
+            who can access, view, and edit content.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h4>Is it independently checked?</h4>
+            <p>SOC 2 Type II, ISO 27001 / 27701 / 42001, GDPR, and CCPA, plus third-party audits.</p>
+          </article>
+        </div>
+        <div class="project-preview" role="note">
+          <strong>Know the headlines; route the details</strong>
+          <p>
+            Answer the four above with confidence. For specific contractual, compliance, or configuration
+            questions, point the user to the security/trust portal and loop in the right internal team. A
+            security answer that&rsquo;s subtly wrong does more damage than saying &ldquo;let me get you the
+            precise answer&rdquo; &mdash; when unsure, route, don&rsquo;t guess.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>This is the kind of content I&rsquo;d build for your specialists</h2>
+          <p>
+            Happy to walk through how I&rsquo;d turn your real ticket trends into job aids, modules, and a
+            knowledge base your team actually uses.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:a.james.donnelly@gmail.com">Start a conversation</a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SEJFHV82K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5SEJFHV82K');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legal AI Pilot Playbook | Alex Donnelly</title>
+    <meta
+      name="description"
+      content="A 90-day framework for running a responsible legal AI pilot inside a law firm: governance principles, scope design, phased rollout, metrics, and decision criteria."
+    >
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="The Human Layer home">
+        <span class="brand-mark" aria-hidden="true">HL</span>
+        <span>
+          <strong>The Human Layer</strong>
+          <small>Alex Donnelly</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#blueprint">Blueprint</a>
+        <a href="index.html#workflows">Workflows</a>
+        <a href="index.html#takeaways">Takeaways</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Playbook</p>
+          <h2>The Legal AI Pilot Playbook</h2>
+          <p>
+            A 90-day framework for introducing AI into law firm operations without treating it as a
+            software rollout. This playbook generalizes what I learned helping build an enterprise AI
+            pilot inside a litigation firm: serving on the firm's AI committee as the voice of the
+            paralegal function, I developed the paralegal portion of the pilot — defining the demo
+            scenarios, pain points, and use cases that drove the vendor's sandbox design — working with
+            staff across six offices, internal technology stakeholders, firm administrators, and the
+            vendor's change-management team.
+          </p>
+        </div>
+
+        <div class="project-preview" role="note">
+          <strong>A note on provenance</strong>
+          <p>
+            This framework is generalized from practice. It names no firms, vendors, or internal
+            documents — the structure is the lesson, and it is designed to be adapted to any practice
+            group or tool stack.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Step 1</p>
+          <h2>Level-set before anyone logs in</h2>
+          <p>
+            Before the pilot tool is ever opened, bring every stakeholder — partners, associates,
+            paralegals, secretaries, and administrators — to a shared baseline on what these systems
+            are, how they work, and what they can and cannot do. This step is not optional preamble:
+            without it, every step that follows evaluates impressions instead of the product. People
+            cannot meaningfully judge a technology they do not understand.
+          </p>
+        </div>
+
+        <div class="enablement-cards">
+          <article>
+            <span>01</span>
+            <h4>What the technology is</h4>
+            <p>Language models generate output; they do not retrieve it from a database of facts. That
+            single distinction explains most of their power and most of their failure modes — and most
+            stakeholder misconceptions. Clarifying this early contextualizes hallucination, omission, and
+            the other errors that are significant concerns for every legal team.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>What it can and cannot do</h4>
+            <p>Current strengths: synthesis, summarization, drafting, finding patterns across volume.
+            Current limits: fabricated detail, inconsistency between runs, and degraded performance on
+            tasks that exceed what the system can attend to at once. These constraints, once understood,
+            help stakeholders see why pilot scope must be limited and workflow analysis focused.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>The stakeholder's real job</h4>
+            <p>No matter your position in the firm, you are an expert in your space. The most important
+            role one can play in a pilot is unlocking the knowledge in their own expertise: articulating
+            what good work product looks like, where the pain lives, and what a tool must get right to
+            matter. Learning only how partners use a product will not lead to firm-wide success.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h4>The evaluation mindset</h4>
+            <p>The question should never be "is this impressive?" Rather, it should be "does this meet
+            a specific core need my expertise defines — and how would I know?" That framing turns every
+            user into an evaluator from day one. Feedback should be detailed, task-specific, and
+            critical — directly responsive to the workflows and use cases under test, and scoped tightly
+            enough to stay meaningful.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 2</p>
+          <h2>Govern before you pilot</h2>
+          <p>
+            The industry suggests that many AI pilots fail before day one: they launch as tool trials
+            instead of governed experiments and closely managed engagements with the human layer. Six
+            principles, agreed in writing before anyone opens the tool, change that.
+          </p>
+        </div>
+
+        <div class="enablement-cards">
+          <article>
+            <span>01</span>
+            <h4>Few workflows, chosen by role</h4>
+            <p>Explicitly select a small set of common workflow items specific to each expert position —
+            a handful per role, no more. Breadth dilutes findings; a tight, role-specific selection
+            produces evidence.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>Low-risk scope</h4>
+            <p>Pilot in support workflows only. No final legal analysis, no client-facing conclusions,
+            no unreviewed filings — ever.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>Human review, always</h4>
+            <p>Every AI output is reviewed by qualified staff before use. "Zero unreviewed outputs" is a
+            rule, not a goal.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h4>Measured against baseline</h4>
+            <p>Capture a sense of how workflows work today in practice, how long they take to complete,
+            and what level of quality is being achieved before the pilot starts. A claim of time-saving
+            or quality enhancement without a baseline is an anecdote.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h4>Secure by default</h4>
+            <p>Only firm-approved tools touch matter data. The pilot defines the approved list and the
+            consequences for going around it.</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h4>Owned and iterative</h4>
+            <p>One named owner runs the pilot, triages issues, and revises guidelines as findings come
+            in. Pilots without an owner drift; pilots without iteration calcify.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Step 3</p>
+          <h2>Draw the scope line in writing</h2>
+          <p>
+            The single most trust-building artifact in a pilot is an explicit included/excluded list.
+            From my experience, attorneys relax when they can see what the AI will never touch. Limiting
+            scope this way early on also simplifies data permissions, minimizes data leakage, and helps
+            calm privacy concerns for managers.
+          </p>
+        </div>
+
+        <div class="blueprint-layout">
+          <div class="blueprint-stage">
+            <div class="stage-header">
+              <h3>Included</h3>
+              <p>Where AI earns its keep safely.</p>
+            </div>
+            <ol class="timeline">
+              <li>Summarization of case materials for internal use</li>
+              <li>Draft formatting and document organization</li>
+              <li>First-pass drafting assistance</li>
+              <li>Administrative and scheduling workflow support</li>
+              <li>Building practical AI fluency through daily use</li>
+            </ol>
+          </div>
+
+          <div class="blueprint-stage emphasized">
+            <div class="stage-header">
+              <h3>Excluded</h3>
+              <p>The bright lines that make the pilot safe to say yes to.</p>
+            </div>
+            <ol class="timeline">
+              <li>Final legal analysis or conclusions</li>
+              <li>Independent legal judgment of any kind</li>
+              <li>Filings or submissions without full human review</li>
+              <li>Sensitive data in unapproved systems</li>
+              <li>Autonomous actions without a human decision</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 4</p>
+          <h2>Inventory the work — and ask three questions of every workflow</h2>
+          <p>
+            Before any tool is evaluated, map what each role actually does — by office, not by job
+            title. The same title can mean different work in different offices, so fact-finding has to
+            happen role by role, location by location. We found this to be especially true in our firm,
+            where staff at one level carried a slightly different basket of tasks than the same role in
+            another office — in a larger law firm network, never assume different nodes work the same
+            way. Then hold every candidate workflow up to three questions.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>1. Client value</h3>
+            <p>
+              Does the change let us offer the client something better — faster answers, lower cost,
+              fewer omissions? A workflow improvement that never reaches the client is overhead reduction,
+              not transformation.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>2. Firm workflow</h3>
+            <p>
+              How does the change move work through the firm — what gets reordered, what gets reviewed
+              differently, where does the saved time actually go? Reliability is the gating question:
+              speed that can't be trusted changes nothing.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>3. Employee burden</h3>
+            <p>
+              Does it improve the working lives of the people doing the work? This is the most overlooked
+              question in legal AI evaluation — and often where the clearest, most immediate gains live.
+            </p>
+          </article>
+        </div>
+
+        <div class="section-heading" style="margin-top: 40px;">
+          <h3>A worked example: the litigation paralegal workflow inventory</h3>
+          <p>
+            The inventory below reflects an idealized basket of workflows characteristic of the paralegal
+            function in a medical malpractice defense practice, with the obvious pain point each workflow
+            carries — the starting point for deciding where AI evaluation effort should go first. This
+            thought experiment — unpacking and defining the workflow items within an expert's purview —
+            can be done in any firm, for any role; this is one generic perspective, based on what we
+            found in our practice. It gives a sense of the thoughtfulness and granularity required before
+            a single program is opened. The added benefit of this approach is that it gets experts using
+            the technology on low-stakes items in their own workflows — it is as much about getting them
+            involved as getting results.
+          </p>
+        </div>
+
+        <table class="rubric inventory">
+          <thead>
+            <tr><th>Workflow</th><th>Obvious pain point</th><th>One focused test</th><th>What evaluation should ask</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Medical chronologies &amp; summaries</td>
+              <td>Volume and fatigue: a single matter can mean five consecutive days inside a
+              7,000–15,000 page record set, where exhaustion breeds omissions — in the document that
+              drives downstream litigation decisions</td>
+              <td>Run an AI first pass on a record set already chronologized by hand; compare entry by
+              entry against the human version</td>
+              <td>Does AI reduce omissions and error, not just hours? Does the reviewer finish the week
+              less depleted?</td>
+            </tr>
+            <tr>
+              <td>Deposition summaries &amp; abstracts</td>
+              <td>Long transcripts condensed under deadline; consistency of format and emphasis varies
+              by preparer</td>
+              <td>Summarize one completed transcript; check the AI version against the preparer's
+              abstract for preserved hedges and nuance</td>
+              <td>Can AI produce a faithful first pass that preserves testimony nuance for human
+              refinement?</td>
+            </tr>
+            <tr>
+              <td>Multi-document analysis memos</td>
+              <td>Thematic review across many documents done with OCR keyword search, which finds words
+              but misses concepts</td>
+              <td>Run semantic search on a closed matter where the themes are known; count documents it
+              finds that keyword search missed</td>
+              <td>Does semantic search surface themes keyword search misses — with citations a reviewer
+              can verify?</td>
+            </tr>
+            <tr>
+              <td>Subpoena drafting</td>
+              <td>Highly templated but detail-critical; transposition errors in names, dates, and
+              custodians are easy to make and costly to miss</td>
+              <td>Populate one template from a case data sheet; audit every name, date, and custodian
+              field for accuracy</td>
+              <td>Can AI populate templates reliably enough that human review shifts from drafting to
+              verification?</td>
+            </tr>
+            <tr>
+              <td>Expert communication &amp; materials</td>
+              <td>Assembling and transmitting large record sets; completeness and version control are
+              manual and high-stakes</td>
+              <td>Have AI check a production set against its index — with one document deliberately
+              removed — and see if it catches the gap</td>
+              <td>Can AI verify completeness against an inventory before materials go out the door?</td>
+            </tr>
+            <tr>
+              <td>People maps / skip traces</td>
+              <td>Aggregating scattered sources by hand; confirming the right person, not a
+              similar-named one</td>
+              <td>Build one profile for a subject whose details are already verified; score the match
+              and false-match rate</td>
+              <td>Does AI-assisted aggregation hold up against identity-verification standards?</td>
+            </tr>
+            <tr>
+              <td>Legal research (occasional)</td>
+              <td>Done infrequently, so tool fluency is low — and hallucinated citations are a
+              career-level risk</td>
+              <td>Request a memo on a settled question with known controlling authority; verify every
+              citation in a primary source</td>
+              <td>Is every citation verifiable in a primary source before it travels anywhere?</td>
+            </tr>
+            <tr>
+              <td>Medical research (occasional)</td>
+              <td>Judging source credibility and translating clinical literature into litigation-usable
+              terms</td>
+              <td>Have AI brief one clinical topic already vetted by an expert; compare for accuracy and
+              flagged uncertainty</td>
+              <td>Can AI brief the medicine accurately while flagging where expert input is required?</td>
+            </tr>
+            <tr>
+              <td>Client case updates</td>
+              <td>The same case facts reformatted into different client-specific templates, over and
+              over</td>
+              <td>Feed one set of case facts into two client templates; diff the output against
+              human-prepared versions</td>
+              <td>Can AI handle the reformatting so humans own the judgment about what changed and why
+              it matters?</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="project-preview" role="note">
+          <strong>Where to start — and what we found</strong>
+          <p>
+            Chronologies earned the first evaluation slot in our pilot: they are the most common and
+            time-intensive paralegal task, the basis for litigation decisions downstream, and — in my
+            testing — among the hardest tasks for general-purpose enterprise tools to do well. They are
+            also where all three questions converge, and the pilot bore that out in both directions. The
+            AI-assisted first pass showed real promise: dramatically faster work, a less depleting
+            reviewer posture than five unassisted days in a fifteen-thousand-page record, and clear
+            potential — under structured human review — for fewer omissions and more tailored work
+            product. But our needs were running ahead of what the wrapped AI tool we were testing could
+            offer: at least in the way we were using it, the output was not yet reliable enough for full
+            production use. That finding was as valuable as any gain. It gave firm decision-makers an
+            honest picture of present capability rather than a sales pitch, a documented baseline to
+            retest as the technology matures, and a precise map of where human review effort must
+            concentrate in the meantime.
+          </p>
+          <p>
+            Two cautions from practice. First, understand the limitations of your tools in the present —
+            and do not assume they will stay limited. We expect progress to make these workflows more
+            and more useful, and our baseline means we will be able to measure that progress when it
+            arrives. Second, client work product belongs only in firm-approved environments, and the
+            approved environment is not always the strongest performer at a given task. Many enterprise
+            tools are wrappers around frontier models: expect the wrappers to improve, but likely on a
+            lag behind the frontier releases they are built on — have patience.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Step 5</p>
+          <h2>Run it in three 30-day phases</h2>
+          <p>
+            What we found is that ninety days is long enough to produce real findings and short enough
+            to keep leadership's attention. Each phase has a distinct job.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Days 1–30: Explore</h3>
+            <p>
+              Finalize approved tools and written guidelines. Identify high-value workflows. Test
+              low-risk use cases. Capture baseline metrics — this is the phase teams skip, and the
+              reason their day-90 report has nothing to show.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Days 31–60: Integrate</h3>
+            <p>
+              Move AI into daily operations on the included workflows. Refine prompts and document what
+              works as reusable patterns. Run weekly office hours — adoption spreads through colleagues
+              watching colleagues, not through memos.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Days 61–90: Decide</h3>
+            <p>
+              Analyze impact against baseline. Gather structured user feedback. Document best practices
+              into a guidance library. Present leadership a decision, not a summary: expand, extend, or
+              stop — against criteria set on day one.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 6</p>
+          <h2>Measure three things, not one</h2>
+          <p>
+            Efficiency alone is a vanity metric. A pilot's real output is a known risk profile and a
+            team that trusts the workflow. Track all three families — and set targets up front.
+          </p>
+        </div>
+
+        <table class="rubric">
+          <thead>
+            <tr><th>Family</th><th>Metrics</th><th>What "good" looks like</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Operational</td>
+              <td>Time saved per workflow vs. baseline; reduction in repetitive tasks; turnaround speed</td>
+              <td>Sustained gains on at least two included workflows, not one-off wins</td>
+            </tr>
+            <tr>
+              <td>Adoption</td>
+              <td>Frequency of use; user comfort and confidence; workflows integrated into daily practice</td>
+              <td>Usage that grows without prompting after week six</td>
+            </tr>
+            <tr>
+              <td>Risk &amp; quality</td>
+              <td>Error rates observed; hallucination incidents logged; compliance with review procedures</td>
+              <td>Every incident logged and triaged; zero unreviewed outputs in use</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Step 7</p>
+          <h2>Lessons from practice</h2>
+          <p>
+            The framework above produced helpful results for us — but it is by no means the only
+            approach. These are the lessons running one exposed: the mistakes to avoid and the additions
+            that turn a good pilot into a durable adoption program.
+          </p>
+        </div>
+
+        <div class="findings-list">
+          <article class="finding">
+            <h3><span>+1</span> Ground the pilot in institutional knowledge — and the client's voice</h3>
+            <p>
+              The most common pilot mistake is evaluating a tool against generic demo data instead of the
+              firm's reality. A sandbox should be built from institutional knowledge: real matter types,
+              documented pain points, and simulated working conditions defined by the people who actually
+              do the work. And law firms serve clients — for a defense practice, institutional clients
+              like health systems and insurers have firm expectations about how their matters are
+              handled. Their perspective, and where appropriate their direct feedback, belongs in
+              use-case design from the start. When we ran fact-finding by role and built demo scenarios
+              around our clients' realities, the vendor's sandbox stopped being a feature tour and
+              started answering the only question that matters: will this work here?
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>+2</span> Decision criteria, set on day one</h3>
+            <p>
+              Define before launch what results trigger "expand," "extend," or "stop." Without
+              pre-committed thresholds, the day-90 readout becomes a vibes meeting, and pilots that
+              should scale stall — or pilots that should stop limp on.
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>+3</span> A vendor feedback loop</h3>
+            <p>
+              Pilots generate exactly the structured user insight AI vendors need — logged errors, missed
+              expectations, workflow friction. Routing it to the vendor in regular, specific terms turns a
+              customer relationship into a product partnership, and gets your issues fixed first.
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>+4</span> A training cadence, not a kickoff</h3>
+            <p>
+              One launch session does not build fluency. Short recurring learning sessions — real matters,
+              real prompts, colleagues demonstrating to colleagues — are where attorneys move from
+              skepticism to daily use. This cannot be stressed enough: this is the real, hard work of
+              the human layer. It requires going to people's desks, working them through small pressure
+              points, and constantly making yourself accessible. An environment of confidence and
+              momentum has to develop in the culture of the pilot if there is any chance of a successful
+              firm-wide rollout.
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>+5</span> The engagement trifecta: you, your colleagues, and the vendor's change managers</h3>
+            <p>
+              An extension of the cadence lesson above: colleague-to-colleague learning is only part of
+              the engine. The trifecta that promotes engagement adds close collaboration with your
+              platform's change managers. Adoption means changing how people think about how workflows
+              happen, and that change has to be facilitated — working closely with change managers in
+              the sandbox to scaffold knowledge deliberately. More knowledge equals more confidence;
+              more confidence equals more usage. Once that loop starts, it percolates out into the firm,
+              and colleague-to-colleague transfer begins happening on its own.
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>+6</span> A QC workflow matched to failure modes</h3>
+            <p>
+              "Human review" is only as good as the reviewer's checklist. Train reviewers on the specific
+              ways AI output fails — dates, omissions, attribution, certainty inflation, unsupported
+              assertions — as documented in my
+              <a href="evaluation.html">chronology evaluation case study</a>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Planning a pilot?</h2>
+          <p>
+            I'm glad to compare notes on pilot design, governance, and the enablement work that makes
+            adoption stick.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:a.james.donnelly@gmail.com">Start a conversation</a>
+      </section>
+    </main>
+  </body>
+</html>
