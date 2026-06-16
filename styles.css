@@ -816,3 +816,62 @@ a.text-button:hover {
   font-weight: 400;
   white-space: normal;
 }
+
+/* Triage job-aid table: balanced 3-column layout */
+.rubric.triage {
+  table-layout: fixed;
+}
+
+.rubric.triage th,
+.rubric.triage td {
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.rubric.triage th:nth-child(1) { width: 32%; }
+.rubric.triage th:nth-child(2) { width: 30%; }
+.rubric.triage th:nth-child(3) { width: 38%; }
+
+.rubric.triage td:last-child {
+  font-weight: 400;
+  white-space: normal;
+}
+
+/* Product-update format-map table: balanced 4-column layout */
+.rubric.formats {
+  table-layout: fixed;
+}
+
+.rubric.formats th,
+.rubric.formats td {
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.rubric.formats th:nth-child(1) { width: 18%; }
+.rubric.formats th:nth-child(2) { width: 18%; }
+.rubric.formats th:nth-child(3) { width: 20%; }
+.rubric.formats th:nth-child(4) { width: 44%; }
+
+.rubric.formats td:last-child {
+  font-weight: 400;
+  white-space: normal;
+}
+
+/* Two-column meta table (label / value) */
+.rubric.meta {
+  table-layout: fixed;
+}
+
+.rubric.meta td {
+  vertical-align: top;
+}
+
+.rubric.meta td:nth-child(1) { width: 22%; }
+
+.rubric.meta td:last-child {
+  font-weight: 400;
+  white-space: normal;
+}
